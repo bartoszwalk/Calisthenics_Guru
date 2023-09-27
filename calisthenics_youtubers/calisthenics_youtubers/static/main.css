@@ -1,0 +1,95 @@
+body {
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 100px;
+    min-height: 100vh;
+    
+  }
+  
+header {
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa33a;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+header h1,
+footer h1 {
+    letter-spacing: 5px;
+}
+
+
+
+nav {
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active {
+    text-decoration: none;
+    color: #ffaa48;
+  }
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ff8800;
+}
+
+a,
+a:hover {
+  color: #ffa33a;
+  text-decoration: none;
+}
+
+  
+.main {
+    grid-row: 3 / 4;
+    padding: 20px;
+  }
+  
+footer {
+    grid-row: 4 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffa33a;
+    font-family: 'Rajdhani', sans-serif;
+    white-space: nowrap;
+
+  }
+
+.btn-primary {
+  background-color:#ffa33a;
+  border-color: #ffa33a;
+}
+.btn-primary:hover {
+  background-color: #ff8800;
+  border-color: #ffa33a;;
+}
+
+.form-control:focus {
+  border-color: #ffa33a;;
+  box-shadow: 0 0 0 0.2rem #ffa33a;
+}
+
+.form-control {
+  max-width: 800px;
+}
+
+#logo {
+  width: 100px;
+}
